@@ -32,7 +32,6 @@ public class InvoiceGenerator {
 		}
 		return count;
 	}
-
 	public double Average(double totalFare, int count) {
 		return totalFare / count;
 	}
