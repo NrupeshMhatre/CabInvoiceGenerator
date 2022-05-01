@@ -11,7 +11,6 @@ public class Summary {
 		this.count = count;
 		this.average = average;
 	}
-	
 	public Summary() {
 		
 	}
