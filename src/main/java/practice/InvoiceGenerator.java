@@ -18,10 +18,22 @@ public class InvoiceGenerator {
 
 	public double calculate(Ride[] rides) {
 		double totalFare = 0;
-		for(Ride ride :rides) {
-			totalFare += this.calculate(ride.distance,ride.time);
+		for (Ride ride : rides) {
+			totalFare += this.calculate(ride.distance, ride.time);
 		}
 		return totalFare;
-			
+
+	}
+
+	public int count(Ride[] rides) {
+		int count = 0;
+		for (Ride ride : rides) {
+			count += 1;
+		}
+		return count;
+	}
+
+	public double Average(double totalFare, int count) {
+		return totalFare / count;
 	}
 }
